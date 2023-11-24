@@ -10,13 +10,13 @@ const SuperQuality = () => {
       className="flex justify-between items-center max-lg:flex-col gap-10 w-full max-container"
     >
       <div className="flex flex-1 flex-col">
-        <Zoom>
+        <Zoom triggerOnce>
         <h2 className="font-palanquin capitalize text-4xl font-bold lg:max-w-lg">
           We Provide You <span className="text-coral-red">Super</span>
           <span className="text-coral-red">Quality</span> Shoes
         </h2>
         </Zoom>
-        <Bounce>
+        <Bounce triggerOnce>
         <p className="mt-4 lg:max-w-lg info-text">
           Ensuring premium comfort and style, our meticulously crafted footwear
           is designed to elevate your experience, providing you with unmatched
@@ -26,7 +26,7 @@ const SuperQuality = () => {
           Our dedication to detail and excellence ensures your satisfaction
         </p>
         </Bounce>
-        <Fade>
+        <Fade triggerOnce>
         <div className="mt-11">
           <Button label="View details" />
         </div>

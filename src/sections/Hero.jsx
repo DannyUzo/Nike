@@ -16,7 +16,7 @@ const Hero = () => {
       className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-5 max-container  p-1"
     >
       <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-        <Bounce>
+        <Bounce triggerOnce>
         <p className="text-xl font-montserrat text-coral-red">Our Summer Collection</p>
         </Bounce>
         <h1 className="mt-10 font-palanquin text-8xl max-sm: text-[72px] max-sm:leading-[82px] font-bold">
@@ -24,16 +24,16 @@ const Hero = () => {
           <br />
           <span className="text-coral-red inline-block mt-3">Nike</span> Shoes
         </h1>
-        <Slide>
+        <Slide triggerOnce>
         <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm"> 
           Discover stylish Nike arrivals, quality comfort, and innovation for
           your active life.
         </p>
         </Slide>
-        <Slide>
+        <Slide triggerOnce>
         <Button label="Shop now" iconURL={arrowRight}/>
         </Slide>
-        <Bounce>
+        <Bounce triggerOnce>
         <div className="flex justify-starts items-start flex-wrap w-full mt-20 gap-16">
           {statistics.map((stat)=>(
             <div key={stat.label}>
